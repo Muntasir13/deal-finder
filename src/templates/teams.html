@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% block content %}
+    <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <a href="index.html"><img src="{{ url_for('static', filename='assets/img/Logo.png') }}" alt="" title="" /></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-has-children"><a href="">Categories</a>
+            <ul>
+              <li class="menu-has-children"><a href="#">Electronics</a>
+                <ul>
+                  <li><a href="#">Devices</a></li>
+                  <li><a href="#">Accessories</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Home Appliances</a></li>
+              <li><a href="#">Health and Beauty</a></li>
+              <li><a href="#">Babies and Toys</a></li>
+              <li class="menu-has-children"><a href="#">Fashion</a>
+                <ul>
+                  <li><a href="#">Men</a></li>
+                  <li><a href="#">Women</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Bags</a></li>
+              <li><a href="#">Watches and accessories</a></li>
+              <li><a href="#">Automobile</a></li>
+              <li><a href="#">Restaurants</a></li>
+              <li><a href="#">Travel</a></li>
+              <li><a href="#">Combo Offers</a></li>
+            </ul>
+          </li>
+          <li id="search-box">
+            <form action="" method="post">
+              <input type="text" placeholder="Search">
+              <button type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Signup</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="team">
+      <div class="container">
+        <div class="section-header wow fadeInUp">
+          <h3>Team</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp">
+            <div class="member">
+              <img src="{{ url_for('static', filename='assets/img/team-1.jpg') }}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="member">
+              <img src="{{ url_for('static', filename='assets/img/team-2.jpg') }}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="member">
+              <img src="{{ url_for('static', filename='assets/img/team-3.jpg') }}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="member">
+              <img src="{{ url_for('static', filename='assets/img/team-4.jpg') }}" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Amanda Jepson</h4>
+                  <span>Accountant</span>
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+{% endblock %}

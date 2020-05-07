@@ -1,0 +1,53 @@
+{% extends "base2.html" %}
+{% block content %}
+  <div class="header">
+    <h2>Deal Upload</h2>
+  </div>
+
+  <form method="post" action="{{ url_for('deals.upload_deal') }}" enctype="multipart/form-data">
+	
+  <div class="input-group">
+      <label>Title</label>
+      <input type="text" name="title" required>
+  </div>
+
+  <div class="input-group">
+  <label>Category</label>
+  <select name="category" required>
+  <option value="text"><strong>Select</strong></option>
+  <option value="electronics" name="electronics">Electronics</option>
+  <option value="home appliances" name="home appliances">Home Appliances</option>
+  <option value="health and beauty" name="health and beauty">Health and Beauty</option>
+  <option value="babies and toys" name="babies and toys">Babies and Toys</option>
+  <option value="fashion" name="fashion">Fashion</option>
+  <option value="bags" name="bags">Bags</option>
+  <option value="watches and accessories" name="watches and accessories">Watches and Accessories</option>
+  <option value="automobile" name="automobile">Automobile</option>
+  <option value="restaurants" name="restaurants">Restaurants</option>
+  <option value="travel" name="travel">Travel</option>
+  <option value="combo offers" name="combo offers">Combo Offers</option>
+  </select> 
+  </div>
+
+  <div class="input-group">
+      <label>Price</label>
+      <input type="text" name="price" required>
+  </div>
+  <div class="input-group">
+      <label>Link</label>
+      <input type="url" name="link" required>
+  </div>
+
+  <div class="input-group">
+    <label>Image</label>
+    <input type="file" name="image" required>
+  </div>
+ 
+
+  <div class="input-group">
+      <button type="submit" class="btn" name="add_deal">Add Deal</button>
+   </div>
+
+  </form>
+
+{% endblock %}

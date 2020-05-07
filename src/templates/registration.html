@@ -1,0 +1,20 @@
+{% extends "base2.html" %}
+{% block content%}
+  <div class="header">
+    <h2>Sign Up As</h2>
+  </div>
+  <form method="post" action="{{ url_for('users.register') }}">
+
+    <select name="Sign Up" onchange="location = this.value;">
+
+<<<<<<< HEAD
+    <option value="text">Sign Up</option> 
+    <option value="{{ url_for('users.register_user', user_type='user')}}">Sign Up As User</option>
+    <option value="{{ url_for('users.register_user', user_type='owner')}}">Sign Up As Owner</option>
+=======
+>>>>>>> master
+
+    </select>
+
+  </form>
+{% endblock %}

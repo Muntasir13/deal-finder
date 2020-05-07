@@ -1,0 +1,21 @@
+{% extends "base2.html" %}
+{% block content %}
+<div class="header">
+    <h2>Recover Your Password</h2>
+</div>
+
+<form method="post" action= "{{ url_for('users.recover_pass', username=session.get('username', None)) }}">
+  <div class="input-group">
+    <label>New Password</label>
+    <input type="password" name="password_1" required>
+  </div>
+
+  <div class="input-group">
+    <label>Confirm Password</label>
+    <input type="password" name="password_2" required>
+  </div>
+  <div class="input-group">
+    <button type="submit" class="btn" name="submit">Submit</button>
+  </div>
+</form>
+{% endblock %}
