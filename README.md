@@ -1,4 +1,6 @@
 # Deal Finder
+![Image of Deal Finder](https://www.behance.net/gallery/71584241/Logo/modules/417177457)
+
 This is a web application using Python language, that is used to create a unified platform for showcasing different deals of various categories.
 
 ## Features 
