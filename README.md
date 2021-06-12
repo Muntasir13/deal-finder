@@ -1,5 +1,5 @@
 # Deal Finder
-![Image of Deal Finder](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ee3f0571584241.5bca0a1829e19.jpg)
+![DealPro](https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ee3f0571584241.5bca0a1829e19.jpg)
 
 This is a web application using Python language, that is used to create a unified platform for showcasing different deals of various categories.
 
